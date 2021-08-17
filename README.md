@@ -23,7 +23,10 @@ Note:    I want to have encrypted ubuntu install (for security). Don't worry, it
 3. Task, COMMANDS
 4. List of all the additional pkgs in the ~/app, ~/home
 
-### Make a live boot USB of "Ubuntu Desktop"
+### Make a live boot USB of "Ubuntu Desktop" 
+#### -- Using Ubuntu
+If your Ubuntu system is still accessible, you can use the following:
+
 1. Download "Ubuntu 18.04.5 Image" --> 64-bit PC (AMD64) desktop image (https://releases.ubuntu.com/18.04.5/)
 2. Create a bootable USB stick on Ubuntu using "Startup Disk Creator":
   - We’re going to use an application called ‘Startup Disk Creator’ to write the ISO image to your USB stick. This is installed by default on Ubuntu.
@@ -40,5 +43,10 @@ Note:    I want to have encrypted ubuntu install (for security). Don't worry, it
   - Installation complete. That’s it! You now have Ubuntu on a USB stick, bootable and ready to go.
   - ![04](images/04_bionic-usb-complete.png)
 
+#### -- Using Windows
+If you cannot access your Ubuntu system, you’ll have to use another system. You can refer to this article to learn [how to create live USB of Ubuntu in Windows](https://itsfoss.com/create-live-usb-of-ubuntu-in-windows/). I recommend to use "Rufus" application.
+
+
+### Re-install Ubuntu 
 3. Run `python line_fit_video.py`.
 4. 
