@@ -98,8 +98,78 @@ Once you have got the live USB of Ubuntu, plugin the USB. Reboot your system. At
 2. Plugin the USB boot
 3. Restart PC
 4. Go to BOIS settings by pressing F12 (or F10/F2) key.
-5. Choose Boot from Removable Devices/USB option.
+5. Choose Boot from Removable Devices/USB option and press Enter.
 
-![Boot_options ](images/09_Boot_options.JPEG)
+![Boot_options](images/09_Boot_options.JPEG)
 
-7. 
+6. Choose `Install Ubuntu`
+7. Select Language. I chose `English (United States)` for every thing.
+8. WiFi check. Connect to your WiFi network if available.
+9. Select `Normal Installation` & `Download Updates while installing Ubuntu` & `Install third party`.
+
+![Normal_installation](images/10_Normal_installation.JPEG)
+
+10. Select `Something else` option, because then you can know exactly what's going on.
+
+![Installation_type](images/11_Installation_type.JPEG)
+
+  - Don't touch any partitions other than `ext4` or `swap`. 
+  - Read these articles: [reinstalling-ubuntu-with-a-dual-boot](https://askubuntu.com/questions/1042746/reinstalling-ubuntu-with-a-dual-boot) & [Strategy on partitioning a Linux system](https://help.ubuntu.com/community/DiskSpace).
+  - When I installed Ubunut for the first time, I made a **4GB** as **/boot** (Not Encrypted) and **~855GB** as **/** (root)(Encrypted). I used this [How to Setup an Encrypted Ubuntu Installation?](https://www.hecticgeek.com/how-to-setup-encrypted-ubuntu-installation/) for encrypting my Ubuntu for the first time. I did not make a `Swap` because if you have like 4GB or more RAM (Mine is 16GB), then you can use GNU/Linux distributions without a Swap partition.
+
+  - Double click the existing 'ext4' partition (4000MB).
+  - Leave the size as it is.
+  - Select 'use as ext4 journaling file system'.
+  - Check 'format the partition'.
+  - Choose '/boot' as mount point from the drop-down menu.
+  - Click OK.
+  
+  ![Boot_partition1](images/12_Boot_partition1.JPEG)
+  
+  ![Boot_partition2](images/13_Boot_partition2.JPEG)
+
+  - Double click the existing 'unknown' partition (855832MB). It is unknown because I made it "Encrypted" root (/) when installing the Ubuntu the last time.
+  
+  ![Encrypt_partition1](images/14_Encrypt_partition1.JPEG)
+  
+  - Leave the size as it is.
+  - Select 'physical volume for encryption' & click OK.
+  
+  ![Encrypt_partition2](images/15_Encrypt_partition2.JPEG)
+  
+  - Leave the size as it is.
+  - Set the password and keep it safe.
+  - Check 'Overwrite empty disk space'.
+  - Click OK.  
+  
+  ![Encrypt_partition3](images/16_Encrypt_partition3.JPEG)
+  
+  - Double click the new 'ext4' partition (855832MB). 
+  
+  ![Encrypt_partition4](images/17_Encrypt_partition4.JPEG)
+  
+  - Leave the size as it is.
+  - Select 'use as ext4 journaling file system'.
+  - Check 'format the partition'.
+  - Choose '/' as mount point from the drop-down menu.
+  - Click OK.  
+  
+  ![Encrypt_partition5](images/18_Encrypt_partition5.JPEG)
+  
+  - Choose the device for bootloader installation. In a normal case, this is just your primary hard drive (i.e. /dev/nvme0e1  Micron 2200S NVMe 1024 GB (1.0TB)). It will overwrite the Windows bootloader with Grub, allowing you to select the OS to boot in Grub. If you are running a dual boot right now, this is most likely how it is configured already. If so, you can select your primary hard drive as bootloader device.    
+  
+  ![Encrypt_partition6](images/19_Encrypt_partition6.JPEG)
+  
+  - That’s it!. Now you click on the ‘Install now’ button and continue with your usual Ubuntu installation.    
+  
+  ![Encrypt_partition7](images/20_Encrypt_partition7.JPEG)
+  
+  - If you get a message from Ubuntu saying that you have not created a **swap** partition and would like to create one, then simply click ‘Continue’ button to ignore this waring and to continue with the installation. 
+  
+  - Leave
+  - 
+
+11. a
+12. 
+13. b
+14. 
