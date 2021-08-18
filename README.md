@@ -181,7 +181,7 @@ Once you have got the live USB of Ubuntu, plugin the USB. Reboot your system. At
 
 ![Unlock_Ubuntu_encrypted](images/24_Unlock_Ubuntu_encrypted_drive.JPEG)
 
-15. Login. Here, it is "robotics". By the default the display is in "Ubuntu". I choose it.
+15. Login. Here, it is "robotics". By the default the display is in "Ubuntu". I keep it.
 
 ![Login_ubuntu](images/25_Login_ubuntu.JPEG)
 
