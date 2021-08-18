@@ -80,6 +80,9 @@ The following articles are very useful for the whole process explained in this t
  - [MBR or GPT partition when making ubuntu bootable live usb](https://askubuntu.com/questions/1015709/mbr-or-gpt-partition-when-making-ubuntu-bootable-live-usb)
  - [Some basics of MBR v/s GPT and BIOS v/s UEFI](https://wiki.manjaro.org/index.php?title=Some_basics_of_MBR_v/s_GPT_and_BIOS_v/s_UEFI)
  - [What’s the Difference Between FAT32, exFAT, and NTFS?](https://www.howtogeek.com/235596/whats-the-difference-between-fat32-exfat-and-ntfs/)
+ - [Switch Windows 10 from RAID/IDE to AHCI](https://support.thinkcritical.com/kb/articles/switch-windows-10-from-raid-ide-to-ahci`)
+ - [Solution-switch-windows-10-from-raidide-to-ahci-operation](http://triplescomputers.com/blog/uncategorized/solution-switch-windows-10-from-raidide-to-ahci-operation/)
+ - [Installing-ubuntu-takes-more-than-8-hours](https://askubuntu.com/questions/1094261/installing-ubuntu-takes-more-than-8-hours)
 
 
 ### Re-install Ubuntu 
@@ -92,12 +95,12 @@ I disabled the secure boot before installing the ubuntu for the first time. So, 
      
      ![Secure_Boot_Status](images/07_Windows-10-Secure-Boot-Status.jpg)
 
-Once you have got the live USB of Ubuntu, plugin the USB. Reboot your system. At boot time, press F2/10/F12 key to go into the BIOS settings and make sure that you have set Boot from Removable Devices/USB option at the top. Save and exit BIOS. This will allow you to boot into live USB.
+Once you have got the live USB of Ubuntu, plugin the USB.
 
 1. I was in ubuntu OS
 2. Plugin the USB boot
 3. Restart PC
-4. Go to BOIS settings by pressing F12 (or F10/F2) key.
+4. Go to "Boot Options" by pressing F12 (or F10/F2) key. On my PC, F2 goes to "Setup" which includes the BOIS and Boot settings. F12 is fine here.
 5. Choose Boot from Removable Devices/USB option and press Enter.
 
 ![Boot_options](images/09_Boot_options.JPEG)
@@ -105,7 +108,7 @@ Once you have got the live USB of Ubuntu, plugin the USB. Reboot your system. At
 6. Choose `Install Ubuntu`
 7. Select Language. I chose `English (United States)` for every thing.
 8. WiFi check. Connect to your WiFi network if available.
-9. Select `Normal Installation` & `Download Updates while installing Ubuntu` & `Install third party`.
+9. Select `Normal Installation` & `Download Updates while installing Ubuntu` & `Install third party`(Installs 3rd party proprietary software like audio codecs and WiFi network adapter drivers).
 
 ![Normal_installation](images/10_Normal_installation.JPEG)
 
