@@ -56,9 +56,29 @@ If your Ubuntu system is still accessible, you can use the following:
   - ![usb_complete](images/04_bionic-usb-complete.png)
 
 #### -- Using Windows
-If you cannot access your Ubuntu system, you’ll have to use another system. You can refer to this article to learn [how to create live USB of Ubuntu in Windows](https://itsfoss.com/create-live-usb-of-ubuntu-in-windows/). I recommend to use "Rufus" application.
+If you cannot access your Ubuntu system, you’ll have to use another system or your Windows OS. 
+1. Check your `BIOS Mode` is `UEFI` or `BIOS`: These days, if you buy a computer pre-installed with Windows, it comes with UEFI boot system. First, you need to check if your Windows is using `UEFI` or legacy `BIOS` and it is mandatory for creating bootable USB stick. Press `Win + R` and type `msinfo32` and then hit enter.
+2. Look for `BIOS Mode` entry in the system information window.
+
+![BIOS_mode](images/06_Windows-10-BIOS-Mode.jpg)
+
+3. Based on the `Boot Mode`, you would need to use software **Universal USB Installer (BIOS compatible)** or **Rufus (UEFI compatible)** for creating a bootable USB stick.
+4. For the first time Ubunut 18.04 installation alongside Windows 10, I used the following information for making the a live boot USB: 
+  - Universal USB Installer vs. Rufus: I used "Rufus" application.
+  - MBR vs. GPT: I used "GPT" partitioning scheme.
+  - BIOS vs. UEFI: I used "UEFI" boot target system.
+
+The following articles are very useful for the whole process explained in this tutorial:
+ - [how to create live USB of Ubuntu in Windows](https://itsfoss.com/create-live-usb-of-ubuntu-in-windows/)
+ - [How to Install Ubuntu 18.04 Alongside With Windows 10 or 8 in Dual Boot](https://www.itzgeek.com/how-tos/linux/ubuntu-how-tos/how-to-install-ubuntu-18-04-alongside-with-windows-10-or-8-in-dual-boot.html)
+ - [How to Install Ubuntu Alongside Windows 10-UEFI](https://itsfoss.com/install-ubuntu-1404-dual-boot-mode-windows-8-81-uefi/)
+ - [How to Disable UEFI Secure Boot in Windows 10](https://itsfoss.com/disable-secure-boot-windows/)
+ - [Disable secure boot y/n?](https://askubuntu.com/questions/785120/disable-secure-boot-y-n)
+ - [MBR or GPT partition when making ubuntu bootable live usb](https://askubuntu.com/questions/1015709/mbr-or-gpt-partition-when-making-ubuntu-bootable-live-usb)
+ - [Some basics of MBR v/s GPT and BIOS v/s UEFI](https://wiki.manjaro.org/index.php?title=Some_basics_of_MBR_v/s_GPT_and_BIOS_v/s_UEFI)
+ - [What’s the Difference Between FAT32, exFAT, and NTFS?](https://www.howtogeek.com/235596/whats-the-difference-between-fat32-exfat-and-ntfs/)
 
 
 ### Re-install Ubuntu 
-3. Run `python line_fit_video.py`.
-4. 
+I disabled the secure boot before installing the ubuntu for the first time. So, I checked it again here for re-installing Ubuntu. I put an article above for disabling the UEFI secure boot in Windows 10.
+
