@@ -1,4 +1,4 @@
-# re_install_ubuntu
+# re_install_ubuntu_in_DUAL_boot
 If you want to reinstall Ubuntu 18.04.xx when you have Ubuntu 18.04 and Windows 10 installed!
 
 Note: This procesure is ok even if you do not have Windows 10 installed (single boot). I wrote my PC info here at the time of doing the following steps just for my own reference.
@@ -165,7 +165,41 @@ Once you have got the live USB of Ubuntu, plugin the USB. Reboot your system. At
   
   ![Encrypt_partition7](images/20_Encrypt_partition7.JPEG)
 
-11. a
-12. 
-13. b
-14. 
+11. Fill in the `Who are you?`. As for the first user, I usually choose **robotics**.
+
+![Who](images/21_who_are_you.JPEG)
+
+12. Then installation will be started.
+
+![Installation_process](images/22_Installation_process.JPEG)
+
+13. When it is complete, this panel will be poped up. Click "Restart Now".
+
+![Installation_complete](images/23_Installation_complete.JPEG)
+
+14. In Grup menu choose the "Ubuntu". Then, in the new window, enter the password for the Ubuntu "Encrypted" partition. 
+
+![Unlock_Ubuntu_encrypted](images/24_Unlock_Ubuntu_encrypted_drive.JPEG)
+
+15. Login. Here, it is "robotics". By the default the display is in "Ubuntu". I choose it.
+
+![Login_ubuntu](images/25_Login_ubuntu.JPEG)
+
+16. After the first Login, if there is any updates, do it.
+
+![Update_after_1st_login](images/26_Update_after_1st_login.JPEG)
+
+17. Then, click "Restart Now".
+
+![Restart_after_1st_update](images/27_Restart_after_1st_update.JPEG)
+
+18. Do not forget to check if your "Windows 10" is still working.
+
+
+**HERE IS THE END FOR Re-Installing the Ubuntu in a DUAL boot. **
+
+
+20. After that I will come to the "Ubuntu 18.04.5" OS to make a new user for myself.
+21. 
+22. a
+23. 
