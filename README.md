@@ -5,8 +5,9 @@ Note: This procesure is ok even if you do not have Windows 10 installed (single 
 
 ## Pc Info
 Name: Dell Alienware
-CPU:  Intel Core i7 @ 2.6 GHz
-GPU:  Geforce RTX 2070
+CPU:  Intel(R) Core(TM) i7-9750H @2.60 GHz
+GPU:  Geforce RTX 2070 with Max-Q Design
+RAM:  16.0 GB
 OS type: 64-bit
 Disk: 1Tb SSD
 
@@ -36,7 +37,7 @@ This is sort of a “black box” in that it tries to fix whatever issue is prev
 5. Choose the correct USB and continue the steps to the end.
 
 ### Make a live boot USB of "Ubuntu Desktop" 
-#### -- Using Ubuntu
+#### -- Using Ubuntu (Only use if you have no dual boot with Windows OS)
 If your Ubuntu system is still accessible, you can use the following:
 
 1. Download "Ubuntu 18.04.5 Image" --> 64-bit PC (AMD64) desktop image (https://releases.ubuntu.com/18.04.5/)
@@ -55,7 +56,7 @@ If your Ubuntu system is still accessible, you can use the following:
   - Installation complete. That’s it! You now have Ubuntu on a USB stick, bootable and ready to go.
   - ![usb_complete](images/04_bionic-usb-complete.png)
 
-#### -- Using Windows
+#### -- Using Windows (Recommended!)
 If you cannot access your Ubuntu system, you’ll have to use another system or your Windows OS. 
 1. Check your `BIOS Mode` is `UEFI` or `BIOS`: These days, if you buy a computer pre-installed with Windows, it comes with UEFI boot system. First, you need to check if your Windows is using `UEFI` or legacy `BIOS` and it is mandatory for creating bootable USB stick. Press `Win + R` and type `msinfo32` and then hit enter.
 2. Look for `BIOS Mode` entry in the system information window.
@@ -67,10 +68,12 @@ If you cannot access your Ubuntu system, you’ll have to use another system or 
   - Universal USB Installer vs. Rufus: I used "Rufus" application.
   - MBR vs. GPT: I used "GPT" partitioning scheme.
   - BIOS vs. UEFI: I used "UEFI" boot target system.
+  
+  ![Rufus_complete](images/08_Rufus.jpg)
 
 The following articles are very useful for the whole process explained in this tutorial:
  - [how to create live USB of Ubuntu in Windows](https://itsfoss.com/create-live-usb-of-ubuntu-in-windows/)
- - [How to Install Ubuntu 18.04 Alongside With Windows 10 or 8 in Dual Boot](https://www.itzgeek.com/how-tos/linux/ubuntu-how-tos/how-to-install-ubuntu-18-04-alongside-with-windows-10-or-8-in-dual-boot.html)
+ - [How to Install Ubuntu 18.04 Alongside With Windows 10 or 8 in Dual Boot](https://www.itzgeek.com/how-tos/linux/ubuntu-how-tos/how-to-install-ubuntu-18-04-alongside-with-windows-10-or-8-in-dual-boot.html) (Main)
  - [How to Install Ubuntu Alongside Windows 10-UEFI](https://itsfoss.com/install-ubuntu-1404-dual-boot-mode-windows-8-81-uefi/)
  - [How to Disable UEFI Secure Boot in Windows 10](https://itsfoss.com/disable-secure-boot-windows/)
  - [Disable secure boot y/n?](https://askubuntu.com/questions/785120/disable-secure-boot-y-n)
@@ -81,4 +84,18 @@ The following articles are very useful for the whole process explained in this t
 
 ### Re-install Ubuntu 
 I disabled the secure boot before installing the ubuntu for the first time. So, I checked it again here for re-installing Ubuntu. I put an article above for disabling the UEFI secure boot in Windows 10.
+ - Check Secure Boot status in Windows 10 OS
+     1. Go to Start.
+     2. In the search bar, type `msinfo32` and press enter
+     3. `System Information` opens. Select `System Summary`.
+     4. On the right-side of the screen, look at `BIOS Mode` and `Secure Boot State`. If `Bios Mode` shows **UEFI**, and `Secure Boot State` shows **Off**, then **Secure Boot is disabled**.
+     
+     ![Secure_Boot_Status](images/07_Windows-10-Secure-Boot-Status.jpg)
 
+Once you have got the live USB of Ubuntu, plugin the USB. Reboot your system. At boot time, press F2/10/F12 key to go into the BIOS settings and make sure that you have set Boot from Removable Devices/USB option at the top. Save and exit BIOS. This will allow you to boot into live USB.
+
+1. I was in ubuntu OS
+2. Plugin the USB boot
+3. Restart PC
+4. Go to BOIS settings by pressing F12 (or F10/F2) key.
+5. set Boot from Removable Devices/USB option at the top
