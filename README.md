@@ -118,17 +118,18 @@ Once you have got the live USB of Ubuntu, plugin the USB. Reboot your system. At
   - When I installed Ubunut for the first time, I made a **4GB** as **/boot** (Not Encrypted) and **~855GB** as **/** (root)(Encrypted). I used this [How to Setup an Encrypted Ubuntu Installation?](https://www.hecticgeek.com/how-to-setup-encrypted-ubuntu-installation/) for encrypting my Ubuntu for the first time. I did not make a `Swap` because if you have like 4GB or more RAM (Mine is 16GB), then you can use GNU/Linux distributions without a Swap partition.
 
   - Double click the existing 'ext4' partition (4000MB).
+  
+  ![Boot_partition1](images/12_Boot_partition1.JPEG)
+  
   - Leave the size as it is.
   - Select 'use as ext4 journaling file system'.
   - Check 'format the partition'.
   - Choose '/boot' as mount point from the drop-down menu.
   - Click OK.
   
-  ![Boot_partition1](images/12_Boot_partition1.JPEG)
-  
   ![Boot_partition2](images/13_Boot_partition2.JPEG)
 
-  - Double click the existing 'unknown' partition (855832MB). It is unknown because I made it "Encrypted" root (/) when installing the Ubuntu the last time.
+  - Double click the existing 'unknown' partition (855832MB). It is unknown because I made it "Encrypted" root (/) the last time I was installing the Ubuntu 18.04.1 OS.
   
   ![Encrypt_partition1](images/14_Encrypt_partition1.JPEG)
   
@@ -137,7 +138,6 @@ Once you have got the live USB of Ubuntu, plugin the USB. Reboot your system. At
   
   ![Encrypt_partition2](images/15_Encrypt_partition2.JPEG)
   
-  - Leave the size as it is.
   - Set the password and keep it safe.
   - Check 'Overwrite empty disk space'.
   - Click OK.  
@@ -150,24 +150,20 @@ Once you have got the live USB of Ubuntu, plugin the USB. Reboot your system. At
   
   - Leave the size as it is.
   - Select 'use as ext4 journaling file system'.
-  - Check 'format the partition'.
+  - Check 'format the partition'. (inactive)
   - Choose '/' as mount point from the drop-down menu.
   - Click OK.  
   
   ![Encrypt_partition5](images/18_Encrypt_partition5.JPEG)
   
-  - Choose the device for bootloader installation. In a normal case, this is just your primary hard drive (i.e. /dev/nvme0e1  Micron 2200S NVMe 1024 GB (1.0TB)). It will overwrite the Windows bootloader with Grub, allowing you to select the OS to boot in Grub. If you are running a dual boot right now, this is most likely how it is configured already. If so, you can select your primary hard drive as bootloader device.    
+  - Choose the device for bootloader installation. In a normal case, this is just your primary hard drive (i.e. for me it was: /dev/nvme0e1  Micron 2200S NVMe 1024 GB (1.0TB)). It will overwrite the Windows bootloader with Grub, allowing you to select the OS to boot in Grub. If you are running a dual boot right now, this is most likely how it is configured already. If so, you can select your primary hard drive as bootloader device.
+  - That’s it!. Now you click on the ‘Install now’ button and continue with your usual Ubuntu installation.     
   
   ![Encrypt_partition6](images/19_Encrypt_partition6.JPEG)
   
-  - That’s it!. Now you click on the ‘Install now’ button and continue with your usual Ubuntu installation.    
+  - If you get a message from Ubuntu saying that you have not created a **swap** partition and would like to create one, then simply click ‘Continue’ button to ignore this waring and to continue with the installation.    
   
   ![Encrypt_partition7](images/20_Encrypt_partition7.JPEG)
-  
-  - If you get a message from Ubuntu saying that you have not created a **swap** partition and would like to create one, then simply click ‘Continue’ button to ignore this waring and to continue with the installation. 
-  
-  - Leave
-  - 
 
 11. a
 12. 
