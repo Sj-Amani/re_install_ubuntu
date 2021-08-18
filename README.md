@@ -211,8 +211,14 @@ Once you have got the live USB of Ubuntu, plugin the USB.
 
 ![New_user](images/28_Add_new_user.jpeg)
 
-26. You can restart and the then Login to which ever user you want!
-27. I use "samani" user for my work developments.
+26. You can restart and the then Login to which ever user you want!.
+
+![Two_users](images/29_Two_users.JPEG)
+
+27. I use "samani" user for my work developments..
+
+![Samani](images/30_Samani_user.JPEG)
+
 
 
 **END!**
