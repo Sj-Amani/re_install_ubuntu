@@ -4,12 +4,12 @@ If you want to reinstall Ubuntu 18.04.xx when you have Ubuntu 18.04 and Windows 
 Note: This procesure is ok even if you do not have Windows 10 installed (single boot). I wrote my PC info here at the time of doing the following steps just for my own reference.
 
 ## Pc Info
-Name: Dell Alienware
-CPU:  Intel(R) Core(TM) i7-9750H @2.60 GHz
-GPU:  Geforce RTX 2070 with Max-Q Design
-RAM:  16.0 GB
-OS type: 64-bit
-Disk: 1Tb SSD
+Name: Dell Alienware;
+CPU:  Intel(R) Core(TM) i7-9750H @2.60 GHz;
+GPU:  Geforce RTX 2070 with Max-Q Design;
+RAM:  16.0 GB;
+OS type: 64-bit;
+Disk: 1Tb SSD.
 
 ## Target:
 Current: Have both Ubuntu 18.04.4 LTS and Windows 10 installed, but Ubuntu is not working well.
