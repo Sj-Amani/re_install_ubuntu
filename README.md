@@ -203,6 +203,13 @@ Once you have got the live USB of Ubuntu, plugin the USB.
 
 
 20. After that I will come to the "Ubuntu 18.04.5" OS to make a new user for myself.
-21. 
-22. a
-23. 
+21. Login to "robotics"
+22. Search "User" in the "Ubuntu Search"
+23. Click `Unlock` on the top right corner and enter your administrative password.
+24. Select whether you wish to create **Standard** or **Administrator** account. 
+25. I made an **Administrator** account called **samani**. I also put my full name **Sajjad Amani**. Enter required information and hit Add button to create a new user account.
+
+![New_user](images/28_Add_new_user.jpeg)
+
+
+**END!**
