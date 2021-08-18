@@ -196,7 +196,7 @@ Once you have got the live USB of Ubuntu, plugin the USB. Reboot your system. At
 18. Do not forget to check if your "Windows 10" is still working.
 
 
-**HERE IS THE END FOR Re-Installing the Ubuntu in a DUAL boot. **
+**HERE IS THE END FOR Re-Installing the Ubuntu in a DUAL boot!**
 
 
 20. After that I will come to the "Ubuntu 18.04.5" OS to make a new user for myself.
