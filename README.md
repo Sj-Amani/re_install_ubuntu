@@ -98,4 +98,8 @@ Once you have got the live USB of Ubuntu, plugin the USB. Reboot your system. At
 2. Plugin the USB boot
 3. Restart PC
 4. Go to BOIS settings by pressing F12 (or F10/F2) key.
-5. set Boot from Removable Devices/USB option at the top
+5. Choose Boot from Removable Devices/USB option.
+
+![Boot_options ](images/09_Boot_options.JPEG)
+
+7. 
