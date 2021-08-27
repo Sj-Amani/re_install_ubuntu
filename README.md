@@ -20,7 +20,7 @@ Note:    I want to have encrypted ubuntu install (for security). Don't worry, it
 ## Procedure
 ### Backup all the important things from your current PC if you can (Optional) e.g.:
 1. Github Key
-2. .bashrc, .bash_ros, .bash_history
+2. .bashrc, .bash_ros, .bash_history, .bash_aliases
 3. Task, COMMANDS
 4. List of all the additional pkgs in the ~/app, ~/home
 
